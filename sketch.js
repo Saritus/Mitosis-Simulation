@@ -15,6 +15,6 @@ function Cell() {
   }
 
   this.show = function() {
-
+    ellipse(this.pos.x, this.pos.y, this.r, this.r)
   }
 }
