@@ -3,7 +3,8 @@ function Cell() {
   this.r = 20;
 
   this.move = function() {
-
+    var velocity = p5.Vector.random2D();
+    this.pos.add(velocity);
   }
 
   this.show = function() {
