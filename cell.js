@@ -12,4 +12,9 @@ function Cell() {
     fill(this.c);
     ellipse(this.pos.x, this.pos.y, this.r, this.r)
   }
+
+  this.clicked = function(x, y) {
+    var dist = distance(this.pos.x, this.pos.y, x, y);
+    return (dist < this.r);
+  }
 }
