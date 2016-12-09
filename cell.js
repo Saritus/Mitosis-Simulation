@@ -1,7 +1,7 @@
-function Cell() {
-  this.pos = createVector(random(width), random(height))
-  this.r = 50;
-  this.c = color(random(255), random(255), random(255));
+function Cell(pos, r, c) {
+  this.pos = pos || createVector(random(width), random(height))
+  this.r = r || 80;
+  this.c = c || color(random(255), random(255), random(255));
 
   this.move = function() {
     var velocity = p5.Vector.random2D();
