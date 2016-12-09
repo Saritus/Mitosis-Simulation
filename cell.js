@@ -17,4 +17,9 @@ function Cell(pos, r, c) {
     var d = dist(this.pos.x, this.pos.y, x, y);
     return(d < this.r);
   }
+
+  this.mitosis = function() {
+    var cell = new Cell(this.pos, this.r/2, this.c);
+    return cell;
+  }
 }
