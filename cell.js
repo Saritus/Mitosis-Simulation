@@ -14,7 +14,7 @@ function Cell() {
   }
 
   this.clicked = function(x, y) {
-    var dist = distance(this.pos.x, this.pos.y, x, y);
-    return (dist < this.r);
+    var d = dist(this.pos.x, this.pos.y, x, y);
+    return(d < this.r);
   }
 }
