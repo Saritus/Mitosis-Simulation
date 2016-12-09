@@ -26,7 +26,9 @@ function Cell(pos, r, c) {
   }
 
   this.mitosis = function() {
-    var cell = new Cell(this.pos, this.r/2, this.c);
+    var offset = random(-2 * this.r, 2 * this.r);
+    var newpos = createVector(this.pos.x + offset, this.pos.y + offset)
+    var cell = new Cell(this.pos, this.r*0.8, this.c);
     return cell;
   }
 }
