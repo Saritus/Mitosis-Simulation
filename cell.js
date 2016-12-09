@@ -1,5 +1,5 @@
 function Cell() {
-  this.pos = createVector()
+  this.pos = createVector(random(width), random(height))
   this.r = 20;
 
   this.move = function() {
